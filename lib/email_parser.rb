@@ -9,7 +9,7 @@ class EmailAddressParser
     @email_list = email_list
   end 
   def parse
-    @email_list.split(/, | /)
+    @email_list.split(/, | /).uniq 
     #if @email_list.include?(",")
      # @email_list.split(", ")
     #else
