@@ -9,5 +9,6 @@ class EmailAddressParser
     @email_list = email_list
   end 
   def parse
+    @email_list.split(",")
   end
 end 
